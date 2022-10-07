@@ -18,13 +18,13 @@ class CreateAppointmentsTable extends Migration
             $table->dateTime('dated_at');
             $table->dateTime('finish_at');
             $table->double('total', 12, 2);
-            //$table->integer('duration')->comment('Duración del servicio en minutos');
+            $table->integer('duration')->comment('Duración del servicio en minutos');
             $table->unsignedBigInteger('client_id');
-           // $table->foreign('client_id')->references('id')->on('clients')->onDelete('set null');
+          //  $table->foreign('client_id')->references('id')->on('clients')->onDelete('set null');
             $table->unsignedBigInteger('service_id');
-          //  $table->foreign('service_id')->references('id')->on('services')->onDelete('set null');
+         //   $table->foreign('service_id')->references('id')->on('services')->onDelete('set null');
             $table->unsignedBigInteger('stylist_id');
-          //  $table->foreign('stylist_id')->references('id')->on('stylists')->onDelete('set null');
+        //    $table->foreign('stylist_id')->references('id')->on('stylists')->onDelete('set null');
             $table->timestamps();
         });
     }

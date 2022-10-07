@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests;
 
-use App\Models\Stylist;
-use App\Models\Appointment;
+use App\Stylist;
+use App\Appointment;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use NunoMaduro\Collision\Adapters\Phpunit\Style;

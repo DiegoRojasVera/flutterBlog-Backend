@@ -16,9 +16,9 @@ class CreateServiceStylistTable extends Migration
         Schema::create('service_stylist', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('service_id');
-        //    $table->foreign('service_id')->references('id')->on('services')->onDelete('set null');
+         //   $table->foreign('service_id')->references('id')->on('services')->onDelete('set null');
             $table->unsignedBigInteger('stylist_id');
-        //    $table->foreign('stylist_id')->references('id')->on('stylists')->onDelete('set null');
+         //   $table->foreign('stylist_id')->references('id')->on('stylists')->onDelete('set null');
         });
     }
 
