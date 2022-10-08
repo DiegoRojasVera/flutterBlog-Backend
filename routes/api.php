@@ -21,6 +21,7 @@ use App\Http\Controllers\LikeController;
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
+//Bookin Router
 Route::get('services', 'App\Http\Controllers\ServicesController@index');
 Route::post('services', 'App\Http\Controllers\ServicesController@store');
 Route::get('services/{id}', 'App\Http\Controllers\ServicesController@show');
